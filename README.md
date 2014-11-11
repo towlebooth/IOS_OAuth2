@@ -3,8 +3,7 @@ IOS_OAuth2
 
 Utilizes wurmr's [OAuthExample](https://github.com/wurmr/OAuthExample) api from iOS.
 
-Usage
-=====
+####Usage
 
 1.  Get the [OAuthExample](https://github.com/wurmr/OAuthExample) project up and running.  
 
