@@ -9,6 +9,6 @@ Utilizes wurmr's [OAuthExample](https://github.com/wurmr/OAuthExample) api from 
 
 2.  Go to Google's [OAuth 2.0 Playground](https://developers.google.com/oauthplayground/) to select the APIs you want to authorize and generate an Access Token.
 
-3.  Replace Access Token in the Playground and run.
+3.  Replace Access Token in the playground file and run.
 
 4.  You should see your data output in the playground console.
