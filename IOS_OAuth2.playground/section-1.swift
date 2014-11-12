@@ -1,10 +1,11 @@
 import UIKit
 import XCPlayground
+import Alamofire
 
 XCPSetExecutionShouldContinueIndefinitely()
 
 // replace with your access token from https://developers.google.com/oauthplayground/
-let token = "ya29.ugBEHA3Z7ZMl_Lj9tVRyr2M2iKE8chR6y5Bpi2Dbi6PGKKErmG--Ce83OcaL8NmCAF_SOXrwrwA4wK"
+let token = "==YourAccessTokenHere=="
 
 // replace if you are not running at the local default location
 let apiUrl = "http://127.0.0.1:3000/users/me?access_token="
@@ -16,3 +17,14 @@ let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, 
 }
 
 task.resume()
+
+
+// Try using Alamofire
+import Alamofire
+
+let completeUrl = apiUrl + token
+
+Alamofire.request(.GET, completeUrl)
+    .responseJSON { (_, _, JSON, _) in
+        println(JSON)
+}
